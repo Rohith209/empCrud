@@ -1,0 +1,35 @@
+<div class="container">
+    <form [formGroup]="registerForm">
+        <h2>Register</h2>
+        <p>Fill the form below to register</p>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="registerFirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="registerFirstName" formControlName="firstName">
+            </div>
+            <div class="mb-3 col-6">
+                <label for="registerLastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="registerLastName" formControlName="lastName">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="registerEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="registerEmail1" formControlName="email">
+        </div>
+        <div class="row">
+            <div class="mb-3 col-6">
+                <label for="registerPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="registerPassword1" formControlName="pwd">
+            </div>
+            <div class="mb-3 col-6">
+                <label for="registerConfirmPwd" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" id="registerConfirmPwd" formControlName="confirmPwd">
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="Register()">Register</button>
+        <br>
+        <p class="mt-2">
+            Already a Member? Click <a [routerLink]="'/login'">here</a> to Login.
+        </p>
+    </form>
+</div>

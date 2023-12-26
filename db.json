@@ -1,0 +1,36 @@
+{
+  "employees": [
+    {
+      "firstName": "Rohith",
+      "lastName": "Sai",
+      "email": "rohithsai209@gmail.com",
+      "mobile": 123,
+      "id": 1
+    },
+    {
+      "firstName": "Lahari",
+      "lastName": "Priya",
+      "email": "lahari@gmail.com",
+      "mobile": 123,
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "firstName": "Rohith",
+      "lastName": "Sai",
+      "email": "rohithsai209@gmail.com",
+      "pwd": "123",
+      "confirmPwd": "123",
+      "id": 1
+    },
+    {
+      "firstName": "Rohith",
+      "lastName": "Sai",
+      "email": "rohith@gmail.com",
+      "pwd": "123",
+      "confirmPwd": "123",
+      "id": 2
+    }
+  ]
+}

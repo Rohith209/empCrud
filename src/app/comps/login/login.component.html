@@ -1,0 +1,19 @@
+<div class="container">
+    <form [formGroup]="loginForm">
+        <h2>Login</h2>
+        <p>Fill the form below to login</p>
+        <div class="mb-3">
+            <label for="loginEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail1" formControlName="email">
+        </div>
+        <div class="mb-3">
+            <label for="loginPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword1" formControlName="pwd">
+        </div>
+        <button type="button" class="btn btn-primary" (click)="Login()">Login</button>
+        <br>
+        <p class="mt-2">
+            Don't have an account? Click <a [routerLink]="'/register'">here</a> to Register.
+        </p>
+    </form>
+</div>
